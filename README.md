@@ -1,2 +1,10 @@
 # SE-Bot
-DESIGN.md addd for Design Milestone
+
+## Team Members:
+* Aditya Shirode (avshirod)
+* Anshul Prakash Deshkar (adeshka)
+* Parin Sanghavi (prsangha)
+* Varun Jayathirtha (vjayath)
+
+## Milestones:
+* DESIGN.md added for Design Milestone
