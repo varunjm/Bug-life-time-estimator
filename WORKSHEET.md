@@ -1,18 +1,18 @@
-##### Week 1
+##### Week 1 (10/13 - 10/20)
 
-| Deliverable   | Item/Status   |  Issues/Tasks
-| ------------- | ------------  |  ------------
-| Design Fix | 90% | &nbsp;
-| Use Cases (3) | Syantax done | &nbsp;
-| Get webhook working | &nbsp; | &nbsp;
-| Mocking | &nbsp; | Dataset? Test parameters?
-| Testing | &nbsp; | Selenium script?
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Design Fix | Updated and Submitted | Messaged TA on Slack | @all
+| Use Cases (3) | 85% | Happy, Alternative Paths | @avshirod, @adeshka
+| Get webhook working | Done | &nbsp; | @vjayath, @adeshka
+| Mocking | &nbsp; | Dataset? Test parameters? | @vjayath, @prsangha
+| Testing | &nbsp; | Selenium script? | @adeshka, @avshirod
 
 * Mention possible paths in Test cases (Happy, Alternative)
-* Explicit division of work among team members
+* Parsing JSON and working on extraction
 
 
-##### Week 2
+##### Week 2 (10/20 - 10/27)
 
 | Deliverable   | Item/Status   |  Issues/Tasks
 | ------------- | ------------  |  ------------
