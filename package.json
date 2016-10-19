@@ -12,6 +12,7 @@
     "request-promise": "~4.1.1",
     "serve-favicon": "~2.3.0",
     "jade": "~1.11.0",
-    "body-parser": "~1.15.2"
+    "body-parser": "~1.15.2",
+    "fs": "0.0.1-security"
   }
 }
