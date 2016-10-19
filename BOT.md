@@ -5,17 +5,50 @@
 
 ### Use Cases
 ```
-Use Case: Create a meeting
+Use Case 1: 
 1 Preconditions
-   User must have google calendar api tokens in system.
+   An issue is created/updated which is not a bug
 2 Main Flow
-   User will request meeting and provide list of attendees [S1]. Bot will provide  possible meeting times and user confirms [S2]. Bot creates meeting and posts link [S3].
+   Bot ignores the issue
 3 Subflows
-  [S1] User provides /meeting command with @username,@username list.
-  [S2] Bot will return list of meeting times. User will confirm time.
-  [S3] Bot will create meeting and post link to google calendar event.
+  [S1] Observe the label of issue (- is not Bug)
+  
+Use Case 2: 
+1 Preconditions
+   An issue, which is a bug, is updated/ commented upon
+2 Main Flow
+   Bot ignores the issue
+3 Subflows
+  [S1] Observe the label of issue (- is Bug)
+  [S2] Observe the status of issue is (- is not Created)
 4 Alternative Flows
-  [E1] No team members are available.
+  [E1] A new bug is mentioned in the comments; bot posts a follow-up comment
+  [E2] The bug parameters have been changed; bot posts a follow-up comment
+
+Use Case 3: 
+1 Preconditions
+   An issue, which is a bug, is created
+2 Main Flow
+   Bot comments an estimated lifetime for the bug
+3 Subflows
+  [S1] Check action:'opened', label:'bug', assignee: > 0
+  [S2] Parse the body for bug attributes - Priority, Severity, Operating System, Bug Dependency List
+  [S3] Use Prediction model to get estimated lifetime of the bug
+4 Alternative Flows
+  [E1] Bot cannot estimate the lifetime of the bug
+
+Use Case 4: 
+1 Preconditions
+   An issue, which is a bug, is created
+2 Main Flow
+   Partial information provided in the Bug Description
+   Bot comments an estimated lifetime for the bug
+3 Subflows
+  [S1] Check action:'opened', label:'bug', assignee: > 0
+  [S2] Parse the body for bug attributes - Priority, Severity, Operating System, Bug Dependency List; Use Default values for missing attributes
+  [S3] Use Prediction model to get estimated lifetime of the bug
+4 Alternative Flows
+  [E1] Bot cannot estimate the lifetime of the bug
 ```
 
 ### Mocking Service Component

@@ -1,4 +1,18 @@
-##### Week 1 (10/13 - 10/20)
+##### Week 1 (10/06 - 10/13)
+
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Design Fix | 65% Complete | Updated Architecture Description | @all
+| Use Cases | &nbsp; | Single flow (?) | @avshirod, @adeshka
+| Get webhook working | 30% | &nbsp; | @vjayath, @adeshka
+| Bot Design | Structure ready | Where to host it? | @all
+| Mocking | &nbsp; | &nbsp; | @vjayath, @prsangha
+| Testing | &nbsp; | Selenium | @adeshka, @avshirod
+
+* Mention possible paths in Test cases (Happy, Alternative)
+* Whether to incorporate Bugzilla or not
+
+##### Week 2 (10/13 - 10/20)
 
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
@@ -7,12 +21,13 @@
 | Get webhook working | Done | &nbsp; | @vjayath, @adeshka
 | Mocking | &nbsp; | Dataset? Test parameters? | @vjayath, @prsangha
 | Testing | &nbsp; | Selenium script? | @adeshka, @avshirod
+| Documentation | .md files updated | Screencast to be done | @all
 
 * Mention possible paths in Test cases (Happy, Alternative)
 * Parsing JSON and working on extraction
 
 
-##### Week 2 (10/20 - 10/27)
+##### Week 3 (10/20 - 10/27)
 
 | Deliverable   | Item/Status   |  Issues/Tasks
 | ------------- | ------------  |  ------------

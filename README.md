@@ -7,8 +7,9 @@
 * Varun Jayathirtha (vjayath)
 
 ## Milestones:
-* DESIGN.md added for Design Milestone
-* FIXDESIGN.md for Design fixes.
+* DESIGN.md added for Design milestone
+* FIXDESIGN.md for Design fixes
+* BOT.md added for Bot milestone
 
 ##Usage
 
