@@ -10,35 +10,27 @@
 | Testing | &nbsp; | Selenium | @adeshka, @avshirod
 
 * Mention possible paths in Test cases (Happy, Alternative)
-* Whether to incorporate Bugzilla or not
+* Whether to incorporate Bugzilla or not [Done]
 
 ##### Week 2 (10/13 - 10/20)
 
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
 | Design Fix | Updated and Submitted | Messaged TA on Slack | @all
-| Use Cases (3) | 85% | Happy, Alternative Paths | @avshirod, @adeshka
+| Use Cases | Done | Happy, Alternative Paths | @avshirod, @adeshka
 | Get webhook working | Done | &nbsp; | @vjayath, @adeshka
-| Mocking | &nbsp; | Dataset? Test parameters? | @vjayath, @prsangha
-| Testing | &nbsp; | Selenium script? | @adeshka, @avshirod
-| Documentation | .md files updated | Screencast to be done | @all
+| Mocking | Done | Dataset? Test parameters? | @vjayath, @prsangha
+| Testing | Done | &nbsp; | @adeshka, @avshirod
+| Documentation | Done | &nbsp; | @all
 
-* Mention possible paths in Test cases (Happy, Alternative)
-* Parsing JSON and working on extraction
+* Mention possible paths in Test cases (Happy, Alternative) [Done]
+* Parsing JSON and working on extraction [Done]
 
 
 ##### Week 3 (10/20 - 10/27)
 
-| Deliverable   | Item/Status   |  Issues/Tasks
-| ------------- | ------------  |  ------------
-| Use Case      | Get Meeting Availability          | &nbsp;
-| Subflow      | 1             |  #33, #38, #78
-| Subflow      | 2             |  [Pivotal Task](https://www.pivotaltracker.com/story/show/114636091)
-| Subflow      | 3             |  [Trello Card](https://trello.com/c/diA1DaMw)
-| Subflow      | &nbsp;        | &nbsp;
-| Selenium Tests| Incomplete    | Get Meeting Availability, error1,...
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Service      | &nbsp;         | &nbsp;        | &nbsp;
+| Subflow      | &nbsp;         | &nbsp;       | &nbsp;
 
-* Github issues in a markdown referred to as `#33` will automatically turn into links when in same repo.
-* You can link to trello cards by click on share inside a card to get a link.
-* You can link to pivotal stories by clicking on the first button left of ID in detail view.
-* You reuse the markdown of the above table for your worksheet.
