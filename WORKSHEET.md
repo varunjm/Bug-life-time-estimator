@@ -31,6 +31,35 @@
 
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
-| Service      | &nbsp;         | &nbsp;        | &nbsp;
-| Subflow      | &nbsp;         | &nbsp;       | &nbsp;
+| Discuss Service Milestone | Basic plan ready | &nbsp; | @all
+| Use Case Coverage | &nbsp; | Think about edge cases | @all
+| ML Model Implementation | Parameters decided | Training Data | @adeshka, @all
 
+
+##### Week 4 (10/27 - 11/03)
+
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Predictor model | 30% | Training data required | @adeshka, @all
+| Documentation | 25% | &nbsp; | @vjayath, @avshirod
+| Use Case Coverage | 50% | &nbsp; | @vjayath, @prsangha
+
+
+##### Week 5 (11/03 - 11/10)
+
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Predictor model | 50% | Passing baseline | @adeshka, @all
+| Training Data Improvement | 50% | Get better data | @prsangha, @vjayath 
+| Update WORKSHEET.md, SERVICE.md | &nbsp; | &nbsp; | @vjayath, @avshirod
+| Use Case Coverage | 65% | Satisfactory threshold | @vjayath
+
+
+##### Week 6 (11/10 - 11/17)
+
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Edge cases, extreme testing | &nbsp; | &nbsp; | &nbsp;
+| Beautification | &nbsp; | &nbsp; | &nbsp;
+| UI for Issue Description Generation | &nbsp; | &nbsp; | &nbsp;
+| Deploy | &nbsp; | &nbsp; | &nbsp;
