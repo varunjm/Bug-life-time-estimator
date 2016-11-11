@@ -17,7 +17,7 @@ Taking reference from the paper, we are using machine learning and data mining t
 [Customized JSON Used for this Project](https://bugzilla.mozilla.org/rest/bug/35?include_fields=priority,severity,depends_on,op_sys,creation_time,cf_last_resolved,cc,status)
 
 
-We obtained a basic dataset of about [13000 bug reports](/data/train_data.csv) from the above dataset to train our model. We implemented [Decision Tree](https://en.wikipedia.org/wiki/Decision_tree_learning) and [Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) as suggested in paper. After running some tests on [test data](/data/test_data.csv), we decided that Decision Tree gave more accurate results. 
+We obtained a basic dataset of about [13000 bug reports](/data/data.csv) from the above dataset to train our model. We implemented [Decision Tree](https://en.wikipedia.org/wiki/Decision_tree_learning) and [Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) as suggested in paper. After running some tests on [test data](/data/test.csv), we decided that Decision Tree gave more accurate results. 
 
 The model is generated in 'R' using this [code](/lib/model.R).
 The bot send input to this [file](/lib/predict.R), which uses the previously generated model from training data to predict the lifetime fo the bug.
