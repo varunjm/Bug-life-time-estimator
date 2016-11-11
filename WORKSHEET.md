@@ -49,17 +49,17 @@
 
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
-| Predictor model | 50% | Passing baseline | @adeshka, @all
-| Training Data Improvement | 50% | Get better data | @prsangha, @vjayath 
+| Predictor model | Done | Passing baseline | @adeshka, @all
+| Data Pre-processing | Done | &nbsp; | @prsangha, @vjayath 
 | Update WORKSHEET.md, SERVICE.md | &nbsp; | &nbsp; | @vjayath, @avshirod
-| Use Case Coverage | 65% | Satisfactory threshold | @vjayath
+| Use Case Coverage | Done | Satisfactory threshold | @vjayath, @avshirod
 
 
 ##### Week 6 (11/10 - 11/17)
 
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
-| Edge cases, extreme testing | &nbsp; | &nbsp; | &nbsp;
+| Edge cases, testing | &nbsp; | &nbsp; | &nbsp;
 | Beautification | &nbsp; | &nbsp; | &nbsp;
 | UI for Issue Description Generation | &nbsp; | &nbsp; | &nbsp;
 | Deploy | &nbsp; | &nbsp; | &nbsp;
