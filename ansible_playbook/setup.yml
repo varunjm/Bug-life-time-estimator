@@ -1,0 +1,51 @@
+---
+ - hosts: all 
+   become: true
+   become_method: sudo
+   vars:
+    nodejs_ppa_script: 'curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -'
+    git_repo : 'https://github.ncsu.edu/adeshka/SE-Bot.git'
+    destination : '/home/vjayath/App'
+    ngrok_link : 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip'
+   tasks:
+   - name: install python software properties
+     apt: 
+       name: python-software-properties
+       state: installed
+
+   - name: add node.js ppa
+     shell: "{{ nodejs_ppa_script }}"
+       
+   - name: install nodejs
+     apt:
+       name: nodejs
+       state: installed
+
+   - name: create nodejs link
+     file: src=/usr/bin/nodejs dest=/usr/local/bin/node state=link
+ 
+   - name: Install forever
+     npm:
+      name: forever
+      global: yes
+
+   - name: install git
+     apt: 
+       name: git
+       state: installed
+
+   - name: install unzip
+     apt:
+       name: unzip
+       state: installed
+   
+   - name: Clone git repository
+     git: repo="{{git_repo}}" dest="{{destination}}"
+   
+   - name: Install node modules
+     npm: path="{{destination}}"
+
+   - name: Install ngrok
+     npm:
+      name: ngrok
+      global: yes
