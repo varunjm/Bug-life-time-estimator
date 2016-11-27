@@ -9,6 +9,10 @@
     username: "{{ lookup('env','GITHUB_USERNAME') }}"
     password: "{{ lookup('env','GITHUB_PASSWORD') }}"
     git_repo : 'https://{{username}}:{{password}}@github.ncsu.edu/adeshka/SE-Bot.git'
+    setup_apt_1: 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+    setup_apt_2: 'gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9'
+    setup_apt_3: 'gpg -a --export E084DAB9 | sudo apt-key add -'
+    apt_update: 'apt-get update'
    tasks:
    - name: install python software properties
      apt:
@@ -33,13 +37,26 @@
 
    - name: install git
      apt:
-       name: git
-       state: installed
+      name: git
+      state: installed
 
-   - name: install unzip
+   - name: Install ngrok
+     npm:
+      name: ngrok
+      global: yes
+
+   - name: Setup apt
+     shell: "{{item}}"
+     with_items:
+         - "{{setup_apt_1}}"
+         - "{{setup_apt_2}}"
+         - "{{setup_apt_3}}"
+         - "{{apt_update}}"
+
+   - name: Install R
      apt:
-       name: unzip
-       state: installed
+         name: r-base
+         state: installed
 
    - name: Clone git repository
      git: repo="{{git_repo}}" dest="{{destination}}"
@@ -47,7 +64,10 @@
    - name: Install node modules
      npm: path="{{destination}}"
 
-   - name: Install ngrok
-     npm:
-      name: ngrok
-      global: yes
+   - name: Run ngrok
+     become: false
+     shell: ngrok http 3000 &
+
+   - name:
+     become: false
+     shell: forever start /home/vjayath/App/bin/www
