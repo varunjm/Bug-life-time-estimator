@@ -58,16 +58,22 @@
          name: r-base
          state: installed
 
+   - name: Add access permission to R-library directory
+     file: path=/usr/local/lib/R/site-library mode=0777
+
    - name: Clone git repository
      git: repo="{{git_repo}}" dest="{{destination}}"
+
+   - name: Install R-dependencies
+     shell: Rscript  /home/vjayath/App/lib/dependencies.R
 
    - name: Install node modules
      npm: path="{{destination}}"
 
-   - name: Run ngrok
-     become: false
-     shell: ngrok http 3000 &
-
-   - name:
-     become: false
-     shell: forever start /home/vjayath/App/bin/www
+   # - name: Run ngrok
+   #   become: false
+   #   shell: ngrok http 3000 &
+   #
+   # - name:
+   #   become: false
+   #   shell: forever start /home/vjayath/App/bin/www
