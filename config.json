@@ -1,0 +1,13 @@
+{
+    "github_api_url": "https://api.github.com",
+    "repositories": [
+        {
+            "name": "SeleniumTesting",
+            "owner":"sebottest",
+            "access_token": "token 393bd396c0448c2f65f74d208528741408741597"
+        }
+    ],
+    "ngrok_api_url": "http://127.0.0.1:4040/api/tunnels/",
+    "app_port": "3000",
+    "app_route": "/predict-bug-lifetime"
+}
