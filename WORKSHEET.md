@@ -12,6 +12,7 @@
 * Mention possible paths in Test cases (Happy, Alternative)
 * Whether to incorporate Bugzilla or not [Done]
 
+
 ##### Week 2 (10/13 - 10/20)
 
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
@@ -59,7 +60,38 @@
 
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
-| Edge cases, testing | &nbsp; | &nbsp; | &nbsp;
-| Beautification | &nbsp; | &nbsp; | &nbsp;
-| UI for Issue Description Generation | &nbsp; | &nbsp; | &nbsp;
-| Deploy | &nbsp; | &nbsp; | &nbsp;
+| Edge cases, testing | Generated edge cases | Testing after model update | @adeshka, @avshirod
+| Beautification | To be done | &nbsp; | @vjayath, @prsangha
+| UI for Issue Description Generation | To be done | &nbsp; | @all
+| Deploy | &nbsp; | &nbsp; | @all
+
+* Where to deploy, how to keep the app running
+* How to easily update repositories to be tracked
+
+
+##### Week 7 (11/17 - 11/24)
+
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Edge cases testing | Done | Screencast | @adeshka
+| Beautification | Done | &nbsp; | @vjayath, @prsangha
+| UI for Issue Description Generation | Secondary task | &nbsp; | @all
+| Deploy | 60% | Troubles with ngrok | @vjayath, @all
+| Report | 50% | &nbsp; | @avshirod, @all
+| Presentation | 35% | Screencast | @all
+| Cleaning the code | Done | Add proper comments | @vjayath
+
+
+##### Week 8 (11/24 - 12/1)
+
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Edge cases testing | Done | Acceptance tests performed | @adeshka
+| Deploy | Done | Scripts ready | @vjayath, @all
+| Report | 50% | &nbsp; | @avshirod, @all
+| Presentation | 35% | Screencast | @all
+| UI for Issue Description Generation | &nbsp; | &nbsp; | @prsangha, @all
+| Make code robust | Set out catch blocks for exceptions and errors | &nbsp; | @vjayath, @all
+
+* Presentation/ Video Screencast with audio/ or GIF mode for final
+* Update README.md with proper instructions to run the project and updated project description
