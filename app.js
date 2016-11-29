@@ -3,9 +3,9 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 var webHook = require('./lib/webHook.js');
+var config = require('./lib/loadConfig');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
 var app = express();
 
 webHook.setup_webhook();
