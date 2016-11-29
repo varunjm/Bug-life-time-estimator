@@ -4,7 +4,7 @@
    become_method: sudo
    vars:
     nodejs_ppa_script: 'curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -'
-    destination : '/home/vjayath/App'
+    destination : '/home/vjayath/SE-Bot'
     ngrok_link : 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip'
     username: "{{ lookup('env','GITHUB_USERNAME') }}"
     password: "{{ lookup('env','GITHUB_PASSWORD') }}"
@@ -64,16 +64,19 @@
    - name: Clone git repository
      git: repo="{{git_repo}}" dest="{{destination}}"
 
+   - name: Add access permission to App
+     file: path=/home/vjayath/SE-Bot/ mode=0777 recurse=yes
+
    - name: Install R-dependencies
-     shell: Rscript  /home/vjayath/App/lib/dependencies.R
+     shell: Rscript  /home/vjayath/SE-Bot/lib/dependencies.R
 
    - name: Install node modules
      npm: path="{{destination}}"
 
-   # - name: Run ngrok
-   #   become: false
-   #   shell: ngrok http 3000 &
-   #
-   # - name:
-   #   become: false
-   #   shell: forever start /home/vjayath/App/bin/www
+   - name: Run ngrok
+     become: false
+     shell: ngrok http 3000 --log=stdout > /dev/null &
+
+   - name:
+     become: false
+     shell: cd /home/vjayath/SE-Bot && forever start bin/www
