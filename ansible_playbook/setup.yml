@@ -79,7 +79,9 @@
         state: installed
 
    - name: Run ngrok
+     become: false
      shell: daemon -- ngrok http 3000
 
-   - name:
+   - name: Run app
+     become: false
      shell: cd /home/vjayath/SE-Bot && forever start bin/www
