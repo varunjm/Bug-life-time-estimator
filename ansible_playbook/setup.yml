@@ -73,10 +73,13 @@
    - name: Install node modules
      npm: path="{{destination}}"
 
+   - name: Install daemon
+     apt:
+        name: daemon
+        state: installed
+
    - name: Run ngrok
-     become: false
-     shell: ngrok http 3000 --log=stdout > /dev/null &
+     shell: daemon -- ngrok http 3000
 
    - name:
-     become: false
      shell: cd /home/vjayath/SE-Bot && forever start bin/www
