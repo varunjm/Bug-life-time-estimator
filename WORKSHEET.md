@@ -51,7 +51,7 @@
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
 | Predictor model | Done | Passing baseline | @adeshka, @all
-| Data Pre-processing | Done | &nbsp; | @prsangha, @vjayath 
+| Data Pre-processing | Done | &nbsp; | @prsangha, @vjayath
 | Update WORKSHEET.md, SERVICE.md | &nbsp; | &nbsp; | @vjayath, @avshirod
 | Use Case Coverage | Done | Satisfactory threshold | @vjayath, @avshirod
 
@@ -87,11 +87,9 @@
 | Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
 | ------------- | ------------  |  ------------ | ---------------
 | Edge cases testing | Done | Acceptance tests performed | @adeshka
-| Deploy | Done | Scripts ready | @vjayath, @all
-| Report | 50% | &nbsp; | @avshirod, @all
-| Presentation | 35% | Screencast | @all
-| UI for Issue Description Generation | &nbsp; | &nbsp; | @prsangha, @all
-| Make code robust | Set out catch blocks for exceptions and errors | &nbsp; | @vjayath, @all
+| Deploy | Done | &nbsp; | @vjayath, @all
+| Report | 80% | &nbsp; | @avshirod, @all
+| Presentation | 80% | Screencast | @prsangha, @all
+| Make code robust | Done | &nbsp; | @vjayath, @all
 
-* Presentation/ Video Screencast with audio/ or GIF mode for final
-* Update README.md with proper instructions to run the project and updated project description
+* Presentation/ Video Screencast with audio/ or GIF for final
