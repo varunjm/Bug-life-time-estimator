@@ -4,10 +4,12 @@
    become_method: sudo
    vars:
     nodejs_ppa_script: 'curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -'
-    destination : '/home/vjayath/SE-Bot'
     ngrok_link : 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip'
+    destination : "{{ lookup('env','APP_PATH') }}"
     username: "{{ lookup('env','GITHUB_USERNAME') }}"
     password: "{{ lookup('env','GITHUB_PASSWORD') }}"
+    ngrok_port: "{{ lookup('env','NGROK_PORT') }}"
+    config_path: "{{ lookup('env','CONFIG_PATH') }}"
     git_repo : 'https://{{username}}:{{password}}@github.ncsu.edu/adeshka/SE-Bot.git'
     setup_apt_1: 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
     setup_apt_2: 'gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9'
@@ -64,11 +66,14 @@
    - name: Clone git repository
      git: repo="{{git_repo}}" dest="{{destination}}"
 
+   - name: Export Configuration file
+     copy: src="{{ config_path }}" dest="{{destination}}/config.json" force=yes
+
    - name: Add access permission to App
-     file: path=/home/vjayath/SE-Bot/ mode=0777 recurse=yes
+     file: path="{{destination}}" mode=0777 recurse=yes
 
    - name: Install R-dependencies
-     shell: Rscript  /home/vjayath/SE-Bot/lib/dependencies.R
+     shell: Rscript  "{{destination}}/lib/dependencies.R"
 
    - name: Install node modules
      npm: path="{{destination}}"
@@ -80,8 +85,8 @@
 
    - name: Run ngrok
      become: false
-     shell: daemon -- ngrok http 3000
+     shell: daemon -- ngrok http "{{ngrok_port}}"
 
    - name: Run app
      become: false
-     shell: cd /home/vjayath/SE-Bot && forever start bin/www
+     shell: cd "{{destination}}" && forever start bin/www
