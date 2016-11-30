@@ -65,9 +65,4 @@ The fields marked in angular brackets are customizable values, needed to be fill
 
 * Run the playbook using this `ansible-playbook -i <inventory file> <playbook-file.yml>`. Below is the screen cast of a playbook in execution.
 ![Playbook-example](/images/deploy.gif)
-* Check the functionality of the bot as described in the use cases.
-
-
-### Running the app
-* In a terminal, run `ngrok http <port number>`. Use the same port number provided in the `config.json` file.
-* In another terminal run `npm install` followed by `npm start` in the same directory as `app.js`. This installs all the dependencies and starts the app (bot)
+* Check the functionality of the bot as described in the [use cases](https://github.ncsu.edu/adeshka/SE-Bot/blob/master/DEPLOY.md).
