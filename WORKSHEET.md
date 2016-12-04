@@ -93,3 +93,11 @@
 | Make code robust | Done | &nbsp; | @vjayath, @all
 
 * Presentation/ Video Screencast with audio/ or GIF for final
+
+##### Week 9 (12/2 - 12/4)
+
+| Deliverable   | Item/Status   |  Issues/Tasks | Working Team Member
+| ------------- | ------------  |  ------------ | ---------------
+| Report | Done | &nbsp; |  @adeshka, @vjayath
+| Presentation | Done | &nbsp; | @avshirod, @all
+
