@@ -13,19 +13,19 @@ Our bot solved this problem by estimating the time required for a given bug, so 
 ###Predict bug lifetime
 
 This is the main feature of the bot. When an issue is created and tagged with the ‘bug’ label, the bot parses the issue description as a JSON and sends it to the predictor model. The predictor then returns an estimate which the bot uses to reply as an issue comment
-![Case3](/images/case3.png)
+![Case3](/images/case3.PNG)
 
 
 ### Assuming default values on missing fields
 
 If the issue does not provide all the variables required by the predictor, the bot sets default values for those variables and sends it to the predictor. It also specifies what default values were used when replying to time estimate as an issue comment.
-![Case4](/images/case4.png)
+![Case4](/images/case4.PNG)
 
 
 ### Validation of input format
 
 The description of the issue created is parsed as a JSON. To handle corner cases, if the description does not follow the JSON format, the bot replies with the error message as an issue comment informing that the user has given an invalid JSON.
-![Case5](/images/case5.png)
+![Case5](/images/case5.PNG)
 
 ## Development Process
 
