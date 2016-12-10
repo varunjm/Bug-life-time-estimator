@@ -1,0 +1,4 @@
+export GITHUB_USERNAME=vjayath
+export APP_PATH=/home/vjayath/SE-Bot
+export CONFIG_PATH=../config.json
+export NGROK_PORT=3000
