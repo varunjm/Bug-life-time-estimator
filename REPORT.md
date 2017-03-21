@@ -1,16 +1,16 @@
-##Problem statement
+## Problem statement
 
 In the realm of Software engineering, one of the most time sensitive issues is fixing of bugs. In code bases which are huge and being contributed to by many participants, there is a plethora of bugs being reported. Therefore one needs to prioritize the bugs in terms of its urgency and the time needed to solve a bug. This is critical to rolling out updates that fix these bugs. So can a bot help and simplify this process for the developers?
 
 
-##Solution
+## Solution
 
 Our bot solved this problem by estimating the time required for a given bug, so that the developers can prioritize the bugs. This would make the software development process more efficient in terms of maintaining deadlines. The bot estimates time using machine learning algorithms to create a predictor model from an initial dataset so that it can estimate the time for the given bug. The bot tracks a GitHub repository and comments its prediction on an issue that is marked as a bug.
 
 
-##Primary Features
+## Primary Features
 
-###Predict bug lifetime
+### Predict bug lifetime
 
 This is the main feature of the bot. When an issue is created and tagged with the ‘bug’ label, the bot parses the issue description as a JSON and sends it to the predictor model. The predictor then returns an estimate which the bot uses to reply as an issue comment
 ![Case3](/images/case3.PNG)
